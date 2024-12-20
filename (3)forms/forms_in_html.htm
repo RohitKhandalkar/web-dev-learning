@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>/* General styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        /* Main form container */
+        main {
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Form fields styling */
+        form div {
+            margin-bottom: 15px;
+        }
+        
+        /* Labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        /* Input fields */
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        /* Textarea styling */
+        textarea {
+            resize: vertical;
+        }
+        
+        /* Radio buttons and checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        /* Submit button */
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        /* Placeholder text color */
+        input::placeholder,
+        textarea::placeholder {
+            color: #aaa;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            main {
+                width: 95%;
+            }
+        
+            label {
+                font-size: 14px;
+            }
+        
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            input[type="password"],
+            input[type="date"],
+            textarea,
+            select {
+                font-size: 12px;
+            }
+        
+            button[type="submit"] {
+                font-size: 14px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>FORMS IN HTML</header>
+    <main>
+        <form action="/submit.php">
+            <!-- name input -->
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter name" required>
+            </div>
+
+            <!-- phone no. input -->
+            <div>
+                <lable for="ph">phone</lable>
+                <input id="ph" type="tel" placeholder="Enter phnone no."required>
+            </div>
+
+            <!-- email input -->
+            <div>
+                <lable for="email">E-mail</lable>
+                <input id="email" type="email" placeholder="Enter E-mail"required>
+            </div>
+
+            <!-- password input -->
+            <div>
+                <lable for="pass">Password</lable>
+                <input id="pass" type="password" placeholder="Enter password"required>
+            </div>
+
+            <!-- dob selector -->
+            <div>
+                <lable for="dob">Date Of Birth</lable>
+                <input id="dob" type="date" placeholder="Enter dob"required>
+            </div>
+
+            <!-- dropdown (select input) for gender-->
+             <div>
+                <lable for="gender">Gender</lable>
+                <select id="gender" required>
+                    <option value=__ disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option vlaue="other">Others</option>
+                </select>
+             </div>
+
+             <!-- radio button for subscription plan (radio type let choose only one of the option) -->
+              <div>
+                <p>Select Subscription Plan</p>
+
+                <label for="basic">Basic</label>
+                <input value="basic" type="radio" name="subscription" id="basic">
+
+                <label for="premium">Premium</label>
+                <input value="premium" type="radio" name="subscription" id="premium">
+
+                <label for="vip">VIP</label>
+                <input value="vip" type="radio" name="subscription" id="vip">
+              </div>
+
+              <!-- checkbox for terms and conditions -->
+               <div>
+                <input id="checkbox" type="checkbox" >
+                <lable for="checkbox">I agree to all terms and conditions</lable> 
+               </div>
+
+               <!-- text box for writing comment -->
+                <div>
+                    <lable for="comment">Comment</lable>
+                    <textarea id="comment"  placeholder="Enter your comment here" rows="4"></textarea>
+                </div>
+
+                <!-- submit buttpn -->
+                 <div>
+                    <button type="submit">Submit</button>
+                 </div>
+
+                 <!-- The form ends here -->
+        </form>
+    </main>
+</body>
+</html>
