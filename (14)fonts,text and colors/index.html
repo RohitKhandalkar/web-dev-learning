@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS, TEXT AND COLORS</title>
+    <!-- adding another font from google fonts using <link> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <!-- another font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* adding font from google fonts using import */
+        @import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+        
+        h1{
+            font-family: "Hanalei", serif;
+            font-weight: 500;
+            font-size:50px;
+            text-align: center;
+            text-transform: uppercase;
+            -webkit-text-fill-color: aqua;  
+        }
+        p{
+            font-family: "Marck Script", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 150%;
+            border: 5px solid black;
+            width: 70px;
+            height: 300px;
+            text-overflow: clip;
+            overflow: scroll;
+            /* text-overflow: ellipsis;  */
+            /* overflow: hidden; */
+        
+        }
+
+        #hex{
+            background-color: #8398ff;
+        }
+        #rgb{
+            background-color: rgb(240, 129, 170);
+        }
+        #rgba{
+            background-color: rgba(93, 255, 215, 0.853);
+        }
+        #hsl{
+            background-color: hsl(69, 100%, 76%);
+        }
+        #hsla{
+            background-color: hsla(142, 100%, 76%, 0.75);
+        }
+
+        ol{
+            font-family: "Genos", serif;
+            font-optical-sizing: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Fonts In html</h1>
+    <P>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, eligendi excepturi recusandae aspernatur nulla in porro nisi ex, sunt assumenda. Dicta aspernatur incidunt, error quaerat impedit sapiente natus reiciendis quidem dignissimos odio possimus fugiat voluptate asperiores in rem aliquam minima magnam inventore accusantium nobis.
+    </P>
+    <span>
+       if you want more info about font , text and color then
+        <a href=" https://codepen.io/web-dot-dev/pen/yLojraG">click here</a>
+    </span>
+    <h2>TYPES OF WAYS TO FILL COLORS[color keywords]</h2>
+    <div>
+        <ol>
+            <li id="hex">HEX</li>
+            <li id="rgb">RGB</li>
+            <li id="rgba">RGB A</li>
+            <li id="hsl">HSL</li>
+            <li id="hsla">HSL A</li>
+            
+        </ol>
+    </div>
+</body>
+</html>
