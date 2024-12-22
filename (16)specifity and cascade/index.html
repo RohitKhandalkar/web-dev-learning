@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFITY AND CASCADE</title>
+    <style>
+        /* the specifity of the selector is 1 */
+        h1{
+            color:green;
+        }
+
+        /* the specifity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+
+        /* the spectifity of this selector is 10 */
+        .cred{
+            color:red ;
+            /* color:red important;  it has the highest proirity */
+            
+        }
+
+        /* this is the example of attribute selector the specifity of this selector is 10 */
+        [data-x=a]{
+            color: aqua important;
+        }
+        
+        /* the specifity of this selector is 10 */
+        .cpurple{
+            color: purple;
+
+        }
+         /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+         a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="yellow cred cpurple" data-x="a">SPECIFITY AND CASCADE</h1>      
+    </header>
+
+    <main>
+        <h2 style="color: red;">CSS Specifity</h2>   <!-- inline specificity -->
+    <div>
+        CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
+        It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector has.
+    </div>
+        <h2>The Cascade Algorithm</h2>
+    <div>
+        CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+    </div>
+        <div>understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+    </div>
+        <ul>
+            <li>Position and order of appearance: the order in which your CSS rules appear</li>
+        <li>Specificity: an algorithm that determines which CSS selector has the strongest match</li>
+        <li>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+        <li>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type</li>
+   </ul>
+
+   <h3>So, the order of specificity is:</h3>
+
+      <div>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</div> 
+    <h3>specificity calculation</h3>  
+    <div>
+        <ul>
+            <li>To calculate specificity, assign a value to each part of the selector:</li>
+
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+            <li>Then, add up the values of all the parts in the selector.</li>
+        </ul>
+    </div>
+
+    <footer><BIG>THANK YOU FOR VISITING THIS SITE</BIG></footer>
+</main>
+</body>
+</html>

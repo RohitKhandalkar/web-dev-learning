@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing units</title>
+    <style>
+      
+
+        .box{
+            box-sizing: border-box;
+            margin: auto;
+            border: solid aqua 2px;
+            width: 80vw;   /* vw means view port width  */
+            height: 10vh;    /*   vh means view port height  */
+            font-size: 30px;  /*  px means pixels it depends on the resolution of the screen it may vary device to device */
+            text-align: center;
+            background-color: rgb(165, 248, 163);
+         
+        }
+
+        .box1{
+            box-sizing: border-box;
+            border: solid black 5px;
+            font-size: 5px;
+            margin: auto;
+            width: 50vmax;
+            /* height: 80vmin; */
+            min-height: 80vh;
+            background-color: rgb(246, 206, 156);
+
+        }
+        .box1 > p{
+            box-sizing: border-box;
+            border: solid blue;
+            font-size: 2em;     /*em doubles the inherited font size */
+            width: 50%;
+            height: 50%;
+            background-color: rgb(255, 184, 235);
+           
+            
+        }
+
+        .box2{
+            box-sizing: border-box;
+            border: solid blue;
+            font-size: 2rem;     /*rem doubles the font size coming from the root element */
+            width: 100vmax;
+            text-align: center;
+            background-color: rgb(255, 163, 163);
+            
+
+        }
+
+        .test{
+            border: solid aquamarine 3px;
+            min-height: 20vh;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box">CSS - SIZING AND UNITS</div>
+
+    <div class="box1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit temporibus omnis, repellendus veniam quo doloremque praesentium nulla culpa, dolor iste sint cumque error et harum labore id expedita qui saepe architecto neque nisi, laboriosam quam? Maiores repellendus soluta ab impedit cum quam veniam porro similique, magni maxime totam laborum laudantium? Ex perspiciatis reprehenderit repudiandae iusto necessitatibus modi, aperiam nisi harum, quia nam dolores totam sequi possimus saepe deleniti! Pariatur et, blanditiis sit dignissimos facere iure distinctio consectetur voluptatem molestiae tempore dolore quod eligendi cumque doloremque libero, laboriosam esse fugit deleniti officiis quia quaerat velit assumenda ex! Necessitatibus consequuntur, fugit quaerat, ducimus similique porro praesentium odit nam dolorum consequatur dicta suscipit non qui? Iste corrupti sunt enim autem ipsa hic nisi reprehenderit, quam id beatae ipsam quo eaque, quia consectetur alias tempore, dolore culpa voluptate omnis distinctio expedita. Officia nesciunt sed eaque possimus accusamus ab. Eveniet necessitatibus, quia repellendus ducimus amet hic illum magni exercitationem repudiandae officia
+        </p>
+    </div>
+
+    <div class="test">
+       lorem23 
+       you can test it by adding more text it will increase its size but minimum it will have 20vh 
+    </div>
+
+    <div class="box2">
+        Hey! its another div
+    </div>
+    
+</body>
+</html>
