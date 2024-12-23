@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows And Outlines</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        
+        .box{
+            /* border: solid rgb(176, 255, 229); */
+          
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 20vh;
+            text-align: center;
+            color: white;
+            width: 60vw;
+            box-shadow: 10px 20px 30px rgb(113, 220, 255);
+            text-shadow: 4px 2px 2px rgb(255, 80, 80);
+        }
+        .outline{
+            border: solid 2px blue;
+            border-radius: 80px;
+            outline:solid 2px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        When it comes to web design, CSS (Cascading Style Sheets) plays an indispensable role in enhancing the visual aesthetics of a website. Among its vast array of properties, the ones that help bring depth and focus to an element are the shadow and outline properties. 
+
+        <ol>
+            <li>there are two types of Shadows in css</li>
+            <li>(1st) box-shadow: h-offset v-offset blur spread color inset;</li>
+            <li>(2nd) text-shadow: h-offset v-offset blur color;</li>
+        </ol>
+    </div>
+
+    <div class="outline box">
+        OUTLINES:- An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.
+    </div>
+    
+    
+</body>
+</html>

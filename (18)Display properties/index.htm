@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: solid black;
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            display: inline;    /*it makes the boxes inline even though they are block elements */
+            display: inline-block;
+        }
+
+        .box2{
+                /* display: flex; */
+                /* display: grid; */
+                /* display: none; */
+                visibility: hidden;
+        }
+        .link{
+            background-color: rgb(165, 255, 255);
+        font-size: 20px;
+        width: 300px;
+        color: rgb(1, 40, 2);
+        display: flex;
+        box-sizing: border-box;
+        margin: auto;  
+        }
+    </style>
+</head>
+<body>
+    <div class="box ">this is 1st box</div>
+    <div class="box box2">this is second box</div>
+    <span>hello!</span>
+    <div class ="box link">
+        for more display Properties
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display ">visit this site </a> 
+    </div>
+    <div>
+        display Properties:- This property specifies and determines how an element would be displayed on the website. By tweaking the value of the display we can show the content “inline”, “grid”, “flex”, and whatnot.
+    </div>
+</body>
+</html>
