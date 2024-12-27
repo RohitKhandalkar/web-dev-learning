@@ -1,0 +1,56 @@
+
+/* inside  :root there are global variables */
+:root{
+    /* you can change the theam of the whole page just by changing these two colors  */
+    --color1: rgb(195, 243, 133) ;
+    --color2: rgb(245, 255, 190);
+    --textcol: rgb(24, 24, 105);
+    --defpadding:30px;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.theam1{
+    background-color: var(--color1);
+    color: var(--textcol);
+    padding: var(--defpadding);
+    border: 1px solid black;
+}
+
+.list1{
+
+    background-color: var(--color2);
+    color:var(--textcol);
+    padding: var(--defpadding);
+    display: flex;
+}
+
+.list1 > li{
+    /* local variable */
+    --bcol:rgb(133, 255, 133);  
+    padding-left:75px;
+    padding-right: 75px;
+    list-style:inside;
+    border: 1px solid var(--bcol);
+}
+
+.list2 > li{
+     /* local variable */
+     --bcol:rgb(73, 194, 255);  
+     padding-left:75px;
+     padding-right: 75px;
+     list-style:inside;
+     border: 1px solid var(--bcol);
+}
+
+.list2{
+
+    background-color: var(--color2);
+    color:var(--textcol);
+    padding: var(--defpadding);
+    
+}
+

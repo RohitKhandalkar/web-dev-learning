@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries</title>
+    <style>
+        div{
+            background-color: rgb(192, 255, 234);
+            margin: 40px;
+            padding: 20px;
+        }
+
+        ul{
+            background-color: rgb(84, 154, 131);
+            border: 1px solid black;
+        }
+
+        li{
+            border: rgb(90, 100, 25) 2px solid;
+        }
+
+        @media screen and (orientation: portrait) {
+            ul{
+                border: 2px solid purple;
+                background-color: rgb(138, 255, 255);
+            }
+        }
+
+        /* @media only screen and (max-width: 455px){ 
+            div{
+
+                background-color: green;
+    }*/
+
+
+                 /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+            
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li> Media queries are used when we want to customize our website's presentation according to the user's
+                screen size. With the help of media queries, user can display different markups based upon the device's
+                general type(mobile, desktop, tablet).</li>
+            <li>It is a logical operation. Whenever a media query becomes true, then the related CSS is applied to the
+                target element.</li>
+            <li>Syntax: @media media-type and (media-feature)</li>
+            <li>@media signifies the start of a media query, the type property defines the display screen on which the
+                rules are to be applied like phone, tablet, pc, etc. </li>
+            <li>Media-feature tells about the dimensions of the screen.</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
