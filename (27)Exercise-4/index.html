@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV-BAR</title>
+    <style>
+        :root{
+
+            /* BY CHANGING THESE VALUES YOU CAN CHANGE WHOLE THEAM OF THE PAGE */
+            --col1:rgb(255, 128, 128);
+            --col2:rgb(5, 1, 140);
+            --shadow1:0px 0px 30px 10px rgb(77, 91, 245);
+            --shadow2:0px 0px 30px 5px rgb(108, 213, 255);
+        }
+        *{
+            background-color: rgb(6, 6, 58);
+            margin: 0;
+            padding: 0;
+        }
+        .navi{
+            background-color: var(--col1);
+            margin: 5px;
+            padding: 20px;
+        }
+        .navi > h2{
+            display: inline;
+            background-color: rgb(251, 86, 86);
+            padding:15px;
+            border-radius: 20px;
+            box-shadow:  var(--shadow1);
+             
+        }
+
+        .list{
+            background-color: rgb(29, 28, 28);
+            padding: 15px;
+            display: inline;
+            
+        }
+        nav{
+            display: inline;
+            padding: 15px;
+            background-color: rgb(25, 23, 27);
+            border-radius: 15px;
+        }
+        .list>li{
+            background-color: var(--col1);
+            display:inline;
+            padding: 5px;
+            margin-left: 20vw;
+            list-style: inside;
+            border-radius: 15px;
+            box-shadow:  var(--shadow2);
+        }
+
+        .box1{
+            background-color: rgb(247, 91, 91);
+            height: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <h2>GAME-ON</h2>
+        <nav>
+            <ul class="list">
+                <li>Home</li>
+                <li>Downloads</li>
+                <li>About-Us</li>
+            </ul>
+        </nav>
+    </div>
+   
+</body>
+</html>
