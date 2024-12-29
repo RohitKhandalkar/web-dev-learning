@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background-color: rgb(36, 0, 53);
+        }
+        header{
+            background-color: rgb(158, 55, 255);
+            padding: 10px;
+            border: 2px solid black;
+            position: sticky;
+            top:0;
+        }
+        h1{
+            display: inline;
+            font-family: 'Times New Roman', Times, serif;
+            color: aliceblue;
+            background-color: transparent;
+        }
+        nav{
+            display: inline;
+        }
+        ul{
+            display: inline;
+            background-color: rgb(158, 55, 255);
+        }
+        nav ul li{
+            display: inline;
+            list-style: inside;
+            margin-left: 15vw;
+            color: aliceblue;
+        }
+        li a{
+            text-decoration: none;
+            background-color: rgb(158, 55, 255);
+        }
+
+        .container{
+            background-color: rgb(138, 30, 239);
+            height: 60vh;
+        }
+        .cards{
+            border: 2px solid rgb(17, 17, 129); 
+            display: inline-block;
+            width: 40vw;
+            height: 45vh;
+            margin: 40px;    
+            margin-left: 70px;    
+        }
+        .card1{
+            background-color: rgb(129, 64, 182);
+        }
+
+        .card2{
+            background-color: rgb(123, 46, 231);
+        }
+
+        .content{
+            color: white;
+            margin: 50px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            
+        }
+
+        img{
+            border-radius: 50%;
+            background-color: aqua;
+            width: 40px;
+            display: inline;
+            position: fixed;
+            bottom: 5px;
+            left: 96%;
+        }
+
+        footer{
+            background-color: rgb(40, 16, 77);
+            color: antiquewhite;
+            padding: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SITE-NAME</h1>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">downloads</a></li>
+                <li><a href="/">services</a></li>
+                <li><a href="/">contacts</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="cards card1"> card 1</div>
+            <div class="cards card2"> card 2</div>
+        </div>
+
+        <div class="content">
+            Lorem500
+        </div>
+
+        <img src="https://st2.depositphotos.com/3867453/11100/v/450/depositphotos_111001402-stock-illustration-letter-r-logo-icon-design.jpg" alt="">
+
+        
+    </main>
+    <footer>
+            <div>Terms and conditions</div>
+            <div>contacts: xyz@gmail.com</div>
+        </footer>
+    
+</body>
+</html>
