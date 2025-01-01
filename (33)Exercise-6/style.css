@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navi{
+    height: 20vh;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(201, 255, 255);
+    flex-wrap: wrap;
+}
+
+li{
+    height: 30px;
+    flex-shrink: 1;
+}
+
+li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo{
+    align-self: flex-start;
+    
+}
+.site-logo > img{
+        height: 20vh;
+        margin-right: 25vw;
+        margin-left: 50px;
+}
+.logo > img{
+    height: 10vh;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* body part  */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10vh;
+    justify-content: center;
+    row-gap: 30px;
+}
+.container>h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+.container>p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+.download{
+    color: aliceblue;
+    background-color: rgb(23, 130, 130);
+    border-radius: 10px;
+    padding: 15px;
+}
+.site-logo2{
+    height: 70px;
+    width: 80px;
+    border-radius: 50%;
+   
+}
+
+/* card part  */
+
+.cards{ 
+   
+    display: grid;
+    grid-template-columns:repeat(3,30vw) ;
+    justify-content: space-evenly;
+    justify-items: center;
+    row-gap: 20px;
+   
+}
+.card{
+    border: 2px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(165, 241, 255) ;
+}
+
+.card > h3{
+    text-align: center;
+     padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.card>button{
+    margin: 30px;
+    margin-left: 100px;
+    padding: 5px;
+    background-color: #ff9898;
+    border-radius: 10px;   
+}
+
+.card>div{
+    text-align: center;
+}
+
+/* for mobiles */
+@media screen and (orientation: portrait){
+    .cards{
+         display: grid;
+        grid-template-columns:repeat(1,30vw) ;
+        justify-content: space-evenly;
+        justify-items: center;
+        row-gap: 20px;
+}
+
+}
+
+.sub{
+    overflow-wrap: break-word;
+     font-size: x-small;
+     text-align: center;
+     margin-top: 5px;
+}
+
+footer{
+    background-color: rgb(93, 195, 229);
+    color: antiquewhite;
+    padding: 30px;
+    text-align: center;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-ANIMATION</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        h1>b{
+            font-size: xx-large;
+           text-align: center;
+            animation: text-color 3s ease-in-out infinite alternate-reverse ;
+        }
+        .container{
+            height: 80vh;
+            width: 80vw;
+            margin: 5vw;
+            border: 2px solid rgb(255, 255, 255);
+            display:grid;
+            grid-template-columns: repeat(32,20px);
+            grid-template-rows: repeat(2,10px);
+            justify-content: center;
+            align-content: center;
+           
+        }
+
+
+        .box{
+            height: 10px;
+            width: 10px;
+            background-color: antiquewhite;
+            align-self: center;
+            position: relative;
+           
+            
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: type-1;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode:backwards; */
+
+
+        }
+        .type-1{
+            animation: ani-1 4s ease-in-out 0s infinite alternate-reverse 
+                        ,color 3s ease-in-out 0s infinite alternate-reverse ;
+        }
+
+        .type-2{
+            animation: ani-2 3s ease-in-out 0s infinite alternate-reverse 
+                        ,color 2s ease-in-out 0s infinite alternate-reverse ;
+        }
+
+        .type-3{
+            animation: ani-3 2s ease-in-out 0s infinite alternate-reverse 
+                        ,color 2s ease-in-out 0s infinite alternate-reverse ;
+        }
+
+
+        @keyframes ani-1{
+            from{
+                transform: translateY(-200px);
+            }
+            to{
+                transform: translateY(200px);
+                
+            }
+        }
+
+        @keyframes ani-2{
+            from{
+                transform: translateY(-100px);
+            }
+            to{
+                transform: translateY(100px);
+                
+            }
+        }
+
+        @keyframes ani-3{
+            from{
+                transform: translateY(-150px);
+            }
+            to{
+                transform: translateY(180px);
+                
+            }
+        }
+
+        @keyframes color{
+            10%{
+                background-color: aqua;
+            }
+            30%{
+                background-color: rgb(195, 127, 255);
+            }
+            50%{
+                background-color: blue;
+            }
+            70%{
+                background-color: brown;
+            }
+            85%{
+                background-color: #0bff37;
+            }
+        }
+
+        @keyframes text-color{
+            10%{
+                color: aqua;
+            }
+            30%{
+                color: rgb(195, 127, 255);
+            }
+            50%{
+                color: blue;
+            }
+            70%{
+                color: brown;
+            }
+            85%{
+                color: #0bff37;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>CSS-ANIMATION</b></h1>
+    </header>
+    <div class="container">
+        <div class="box type-3"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-3"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-3"></div>
+        <div class="box type-2"></div>
+        <div class="box type-1"></div>
+        <div class="box type-3"></div>
+    
+    </div>
+</body>
+</html>
