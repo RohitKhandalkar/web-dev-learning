@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS-Object-fit-Property</title>
+    <style>
+        .container{
+            height: 70vh;
+            width: 80vw;
+            margin: 5%;
+            padding: 30px;
+            border: 2px solid black;
+            background-image: url(https://img.freepik.com/premium-photo/yellow-blue-abstract-creative-background-blue-abstract-background-geometric-background_481527-28134.jpg);
+            background-size:contain;
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            background-clip: content-box;
+            
+            /* background-position: center center; */
+            background-position: center center;
+            /* background-repeat:no-repeat; */
+        }
+        /* img{
+            height: 300px;
+            width:800px;
+            /* cover the image according to the height: and width: given to image; witout disturbing the aspect ratio of the image; */
+            /* in this the image can overflow but its hidden */
+            /* object-fit: cover; */
+            /* object-position: bottom right; */
+            /* object-position: 40px 30px; */
+
+            /* display: the whole image inside the given width and height without changing its aspect ratio; */
+            /* in this the image would not overflow: because its inside the given height: and width: ;;; */
+            /* object-fit: contain; */
+
+            /* fit the image according to the given height and width , but is distores the image aspect ratio */
+            /* object-fit: fill; */
+            /* border:3px solid rgb(255, 0, 0); */
+        /* } */ 
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        THE CONTENT
+            <!-- <img src="https://media.istockphoto.com/id/689395406/photo/cafe-imaes.jpg?s=612x612&w=0&k=20&c=lLgsBmAVYCe3jPUA8EHvtAmviZxNnztCRBd53JzZd0k=" alt="Cafe image"> -->
+    </div>
+</body>
+</html>

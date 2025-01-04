@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Filters</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(21, 4, 49);
+        }
+        h1{
+            font-size: 100px;
+            text-align: center;
+            filter:brightness(100%);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtoiXZoApJeMlv4qakPnWnASeKo5a-Vq1Lw&s);
+            background-size: contain;
+            background-position: top left;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid{
+            display: grid;
+            margin: 5%;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            gap:20px;
+            align-items: center;
+            justify-items: center;
+        }
+        .item{
+            border: 5px solid rgb(179, 0, 255);
+            border-radius: 20px;
+            filter: blur(5px);
+            /* filter: drop-shadow(20px); */
+            /* filter: grayscale(70%); */
+            /* filter: sepia(); */
+            z-index: 0;
+            
+        }
+
+        .item:hover {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: img-ani 1s ease-in-out both;
+        }
+
+
+         @keyframes img-ani{
+            form{
+
+            }
+            to{
+                transform: scale(1.5);
+                z-index: 1;
+                filter: contrast(100%);
+                box-shadow: 0px 0px 20px 15px rgb(179, 0, 255);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>THE GALLARY</h1>
+    <div class="grid">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLeEJ47c_Y9g5VeNDcUWmFMuvpjB4LsrR3ZQ&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Cmx3rQtKCxm_Yk8wNbFwbQcYvWkVADrY7Q&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYhb61Moi9JBoHyjir5XfRZ-V-8OxIopyrw&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPaG-hKNIgvedxbVF_ap-S4oOkXcNGMhagKQ&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThn2O4f85iRUGth0pwLOtyRf-g24gOMKcPbQ&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dSygMWbKQFzgP20rLq6crx3itm6mnQ5hcA&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWuVuPcj7aQr6kzZkw0D94IOKcF2uBccRPmw&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnjBirkprFTejYpCnDapJIwCNQ8KjDWLYUPQ&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq00uXqOWNZb9Hcc-i0DPZk7MRQRyzxNV-3g&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1WMdddbW65ijUt_H9DN70z5V0KwdOyr_qbA&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaqRG_uL65WJl1T8zRozClqoTwAr8cuCln-Q&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1GkC-HcJ-A1up_LFocZl-jMADPgNezfjkoQ&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUAaCexCAdZ5zlY2up5aKVinogvidkEY3AA&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStrwnnVb8CD9C2aDLvG0UfY3qQM_aDzFb0iA&s" alt="">
+        <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSES5I3LtBcpbrBUls-KnCOv1hJ_LEWaESA&s" alt="">
+      </div>
+</body>
+</html>
