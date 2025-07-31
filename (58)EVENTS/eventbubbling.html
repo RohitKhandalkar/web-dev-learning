@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            border:2px solid black;
+        }
+        .childcontainer{
+            height: 30vh;
+            width: 30vw;
+            border:2px solid black;
+        }
+        .child{
+            height: 15vh;
+            width: 15vw;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child"> </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            e.stopPropagation
+            alert("container was clicked")
+        })
+        document.querySelector(".childcontainer").addEventListener("click",(e)=>{
+            e.stopPropagation
+            alert("childcontainer was clicked")
+        })
+        document.querySelector(".child").addEventListener("click",()=>{
+            alert("child was clicked")
+        })
+
+        function rancolor(){
+    const r=Math.floor(Math.random()*256);
+    const g=Math.floor(Math.random()*256);
+    const b=Math.floor(Math.random()*256);
+
+    return `rgb(${r},${g},${b})` 
+}
+        //here unit of time is in milisecond
+       let a= setInterval(()=>{
+            document.querySelector(".child").style.background=rancolor() },100)
+            console.log(a)
+
+            //  setTimeout(()=>{
+            //     document.querySelector(".child").style.background=rancolor() },1000)
+    </script>
+</body>
+</html>
